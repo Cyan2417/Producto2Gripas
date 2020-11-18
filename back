@@ -1,0 +1,38 @@
+    public class Status
+    {
+        public string status { set; get; }
+    }
+    public class Resultados
+    {
+        public string types { set; get; }
+        public string addresFormato { set; get;}
+        public class Componentes
+        {
+            public string long_name { set; get; }
+            public string short_name { set; get; }
+            public string types { set; get; }
+        }
+        public class Geometry
+        {
+            public class location
+            {
+                public double lat { set; get; }
+                public double lng {set; get;}
+
+            }
+            public string location_type { set; get; }
+            public class viewport
+            {
+                public class southwest
+                {
+                    public double latsw { set; get; }
+                    public double lngsw { set; get; }
+                }
+                public class northeast
+                {
+                    public double latnh { set; get; }
+                    public double lngnh { set; get; }
+                }
+            }
+        }
+    }
